@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferrari F80 · 跃马的全新超级跑车</title>
+<meta name="description" content="法拉利 F80 中文介绍：1200 hp 混合动力 V6，300 hp/l 升功率，1000 kg 下压力，限量 799 台。资料来自法拉利官网与官方发布稿。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ferrari F80 · 跃马的全新超级跑车">
+<meta property="og:description" content="法拉利 F80 中文介绍：1200 hp 混合动力 V6，799 台限量。">
+<meta property="og:image" content="assets/img/670e179521404600566636d2-ferrari-f80-photo-reveal-website-desk.webp">
+<meta property="og:url" content="https://www.ferrari.com/en-EN/auto/f80">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+/* 自动语言:海外访客自动进入英文版;用户主动选择过中文则不跳转(国内默认中文,判断失败保持中文) */
+(function () {
+  if (localStorage.getItem('f80-lang') === 'zh') return;
+  window.f80LangCheck = function (d) {
+    if (d && d.country_code && d.country_code !== 'CN') {
+      localStorage.setItem('f80-lang', 'en');
+      location.replace('en.html');
+    }
+  };
+  var s = document.createElement('script');
+  s.src = 'https://ipapi.co/json/?callback=f80LangCheck';
+  s.onerror = function () {};
+  document.head.appendChild(s);
+})();
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="assets/img/f80-favicon.png">
+</head>
+<body>
+
+<div class="cursor" aria-hidden="true"><span></span></div>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <span class="nav__now mono" id="navNow">01 · 缘起</span>
+    <a class="nav__brand is-hidden" href="#hero">
+      <span class="nav__brand-mark">FERRARI <span>F80</span></span>
+    </a>
+    <span class="nav__lang">
+      <a class="lang-btn mono" href="en.html" onclick="localStorage.setItem('f80-lang','en')">EN</a>
+      <button class="nav__menu-btn mono" id="menuBtn" aria-label="章节菜单" aria-expanded="false"><span class="nav__menu-icon"><i></i><i></i><i></i></span></button>
+    </span>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navBar"></i></div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay" hidden>
+  <nav class="menu-overlay__nav" aria-label="章节菜单"></nav>
+</div>
+
+<aside class="index-rail" aria-label="章节索引">
+  <div class="index-rail__title mono">目录</div>
+  <nav class="index-rail__nav" id="indexNav"></nav>
+  <div class="index-rail__progress"><span class="mono" id="railPct">00%</span></div>
+</aside>
+
+<div class="scroll-gauge" aria-hidden="true">
+  <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle class="sg__bar" cx="22" cy="22" r="19"/></svg>
+  <span class="sg__num mono">00</span>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero" data-num="00">
+  <div class="hero__media">
+    <video class="hero__video" autoplay muted loop playsinline preload="auto"
+           poster="assets/img/670e179521404600566636d2-ferrari-f80-photo-reveal-website-desk.webp">
+      <source src="assets/video/aero-intro.mp4" type="video/mp4">
+    </video>
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__content">
+    <p class="hero__kicker mono">MARANELLO · 2024</p>
+    <h1 class="hero__title">F80</h1>
+    <p class="hero__sub">跃马的全新超级跑车</p>
+    <p class="hero__desc">1984 年，GTO 开启了超级跑车的传奇。40 年后，F80 以 1200 hp 混合动力 V6，成为马拉内罗有史以来最强大的公路跑车。</p>
+    <div class="hero__specs mono">
+      <span><b class="count" data-to="1200">0</b> hp</span>
+      <span><b class="count" data-to="350">0</b> km/h</span>
+      <span><b class="count" data-to="799">0</b> 台</span>
+    </div>
+  </div>
+  <div class="hero__scroll mono">向下滚动 <span class="hero__line"></span></div>
+</section>
+
+<!-- ============ 01 缘起 ============ -->
+<div class="chapter-break" data-ch="01"><span class="chapter-break__watermark" aria-hidden="true">LEGACY</span><div class="wrap"><span class="cb__no mono">01</span><h2 class="cb__name">缘起<span class="cb__en">THE LEGACY</span></h2><span class="cb__meta mono">CHAPTER 01 / 08</span>
+      <p class="cb__lead">1984 年至今，每一代超级跑车都定义了自己的时代。</p></div></div>
+<section class="story section" id="story" data-num="01">
+  <div class="wrap">
+    <h2 class="sec-title reveal">一辆注定成为传奇的车</h2>
+    <div class="story__lead reveal">
+      <p>自 1984 年的 GTO 起，法拉利不断推出代表尖端技术与性能巅峰的超级跑车。它们只为最挑剔的车主而生，在诞生的年代便成为传奇——不仅铭刻于法拉利的历史，也铭刻于汽车的历史。</p>
+      <p>如今，这一家族的最新成员 F80 仅限量生产 <b>799</b> 台，与 GTO、F40、LaFerrari 并肩。它汇聚马拉内罗在动力、空气动力学与车辆动态领域的一切成就，展示着这家工厂所能达到的极致。</p>
+    </div>
+    <div class="heritage__row">
+      <article class="hcard reveal">
+        <div class="hcard__year mono">1984</div>
+        <h3>GTO</h3>
+        <p class="mono hcard__num">传奇的开端</p>
+        <p>超级跑车谱系的起点——涡轮时代的技术巅峰，一个时代的图腾。</p>
+      </article>
+      <article class="hcard reveal">
+        <div class="hcard__year mono">1987</div>
+        <h3>F40</h3>
+        <p class="mono hcard__num">信仰的定义</p>
+        <p>恩佐·法拉利生前最后批准的项目，以纯粹致敬纯粹，成为时代的文化符号。</p>
+      </article>
+      <article class="hcard reveal">
+        <div class="hcard__year mono">2013</div>
+        <h3>LaFerrari</h3>
+        <p class="mono hcard__num">混动的序章</p>
+        <p>法拉利首款混合动力超级跑车，证明电气化与极致性能可以共生。</p>
+      </article>
+      <article class="hcard hcard--now reveal">
+        <div class="hcard__year mono">2024</div>
+        <h3>F80</h3>
+        <p class="mono hcard__num">马拉内罗之最</p>
+        <p>马拉内罗史上最强大的公路跑车——1200 hp 混合动力，为极致而生。</p>
+      </article>
+    </div>
+    <blockquote class="quote reveal">
+      <p>"F80 是法拉利的新超级跑车，注定与从 1984 年 GTO 到 2016 年 LaFerrari Aperta 的传奇车型并肩。"</p>
+      <footer>— 法拉利 · 官方发布
+        <span class="quote__en">"The F80 is Ferrari's new supercar, a car destined to join iconic models from the 1984 GTO to the 2016 LaFerrari Aperta."</span>
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ 02 设计 ============ -->
+<div class="chapter-break" data-ch="02"><span class="chapter-break__watermark" aria-hidden="true">DESIGN</span><div class="wrap"><span class="cb__no mono">02</span><h2 class="cb__name">设计<span class="cb__en">DESIGN</span></h2><span class="cb__meta mono">CHAPTER 02 / 08</span>
+      <p class="cb__lead">航空语言与法拉利 DNA，在此第一次真正合一。</p></div></div>
+<section class="design section" id="design" data-num="02">
+  <div class="wrap">
+    <h2 class="sec-title reveal">以航空为名的设计纪元</h2>
+    <div class="story__lead reveal">
+      <p>F80 以强烈的未来感视觉冲击登场，带着毫不含糊的航空参照。由 Flavio Manzoni 领衔的法拉利设计中心，以品牌 F1 赛车的美学为起点，为跃马开启了激进的新视觉纪元。</p>
+      <p>设计团队从第一张草图起便与工程、空气动力学、人体工学部门并肩工作，在形式与体量之间自然收敛——每一根线条都要回答同一个问题：它有没有性能上的理由。</p>
+    </div>
+    <div class="design__grid">
+      <article class="dcard tilt reveal">
+        <img src="assets/img/6710d019bd9b5300108809af-ferrari-f80-exterior-focus-1-new.webp" alt="二面角截面" loading="lazy">
+        <div class="dcard__body">
+          <h3>二面角截面</h3>
+          <p>车身架构以二面角截面定义，两个底角牢牢扎根于车轮；侧面看去，雕塑般的后部流动线条强调着整个尾翼区的力量感。</p>
+        </div>
+      </article>
+      <article class="dcard tilt reveal">
+        <img src="assets/img/670e179521404600566636d2-ferrari-f80-photo-reveal-website-desk.webp" alt="向 F40 致敬" loading="lazy">
+        <div class="dcard__body">
+          <h3>向 F40 致敬</h3>
+          <p>前轮拱以垂直面板收尾、傲然立于车门之前——F40 的视觉语言，以现代方式重生。</p>
+        </div>
+      </article>
+      <article class="dcard tilt reveal">
+        <img src="assets/img/670d2d6fcd61b70010d5e544-ferrari-f80-aerodynamics-intro-hotspot-desk-mirror.webp" alt="功能即形态" loading="lazy">
+        <div class="dcard__body">
+          <h3>功能即形态</h3>
+          <p>座舱比 LaFerrari 低 50 mm;蝴蝶门以双轴铰链近乎垂直开启;NACA 管道将气流导入发动机进气与侧置散热器——既是功能,也是 F80 最原创的造型符号。</p>
+        </div>
+      </article>
+      <article class="dcard tilt reveal">
+        <img src="assets/img/6710d018dcd6130010c3519f-ferrari-f80-exterior-focus-2-new.webp" alt="双色分区" loading="lazy">
+        <div class="dcard__body">
+          <h3>双色分区</h3>
+          <p>上部车身色与下部清漆碳纤维形成对比，每一次注视，都让这台车的技术本质显露更多。</p>
+        </div>
+      </article>
+    </div>
+    <blockquote class="quote reveal">
+      <p>"唯有从第一笔草图起就让这种策略贯彻始终，它们才可能实现。"</p>
+      <footer>— 法拉利设计中心 · Flavio Manzoni
+        <span class="quote__en">"None of what we have achieved with the F80 are easy things to do. They're only possible if you implement this kind of strategy from the very first pencil stroke."</span>
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ 03 内饰 ============ -->
+<div class="chapter-break" data-ch="03"><span class="chapter-break__watermark" aria-hidden="true">INTERIOR</span><div class="wrap"><span class="cb__no mono">03</span><h2 class="cb__name">内饰<span class="cb__en">INTERIOR</span></h2><span class="cb__meta mono">CHAPTER 03 / 08</span>
+      <p class="cb__lead">一座环绕驾驶者的茧——一台可以驾驶的 F1 赛车。</p></div></div>
+<section class="interior section" id="interior" data-num="03">
+  <div class="wrap">
+    <h2 class="sec-title reveal">“1+” 座舱，驾驶者至上</h2>
+    <div class="story__lead reveal">
+      <p>紧凑的座舱比例源于单座赛车式的驾驶舱——封闭式 F1 赛车的既视感。设计师、工程师、人体工学与色彩材质专家长达数年的协同，让驾驶者成为座舱中无可争议的主角。</p>
+      <p>副驾座椅在人体工学上完整而舒适，却被如此巧妙地融入内饰，几乎从视野中消失；两位乘员的座椅纵向错位，让座舱更窄、迎风面积更小——减阻与减重，从不以舒适为代价。</p>
+    </div>
+  </div>
+  <div class="vsection" id="vinterior">
+    <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670d339e1eb0fa00556718b8-ferrari-f80-interior-intro-desk.webp">
+      <source src="assets/video/interior-intro.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker mono">INTERIOR</p>
+      <h3 class="vsection__title">一座为驾驶者而生的茧</h3>
+      <p class="vsection__text">控制面板向驾驶者倾斜，一切形式向方向盘与仪表收敛。</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="webcards webcards--inline">
+      <article class="webcard reveal">
+        <video class="webcard__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/670fd8fddcd6130010c3513b-f250_interni_hotspot_sedile_pilota_v07_desktop.webp">
+          <source src="assets/video/interior-seat.mp4" type="video/mp4">
+        </video>
+        <div class="webcard__body">
+          <span class="webcard__num mono">DRIVER'S SEAT</span>
+          <h3>驾驶者之座</h3>
+          <p>驾驶侧采用可调座椅与更长的碰撞吸能结构，确保任何身材的驾驶者都舒适安全；副驾侧固定座椅全力减重——两位乘员的安全，从不妥协。</p>
+        </div>
+      </article>
+      <article class="webcard reveal">
+        <video class="webcard__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/670d339ce4530000793bb757-ferrari-f80-interior-steering-wheel-desk.webp">
+          <source src="assets/video/interior-wheel.mp4" type="video/mp4">
+        </video>
+        <div class="webcard__body">
+          <span class="webcard__num mono">NEW STEERING WHEEL</span>
+          <h3>全新方向盘</h3>
+          <p>为 F80 专门开发，将在未来跃马公路车上延续。更小的尺寸、上下平直的方向盘缘——左右辐条上的实体按键回归，无需视线即可凭触感辨认，戴手套亦握持自如。</p>
+        </div>
+      </article>
+      <article class="webcard reveal">
+        <video class="webcard__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/670fd8fa75d163001163a319-f250_interni_hotspot_panchetta_v07_desktop.webp">
+          <source src="assets/video/interior-luggage.mp4" type="video/mp4">
+        </video>
+        <div class="webcard__body">
+          <span class="webcard__num mono">24 HOUR SUITCASE SPACE</span>
+          <h3>24 小时行李箱</h3>
+          <p>法拉利超级跑车的第一次：座椅后方预留足以容纳 24 小时行李箱的空间，配有固定网与绑带。为长途而生的超级跑车，理应如此。</p>
+        </div>
+      </article>
+    </div>
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b class="mono">1+</b><span class="mono">座舱布局</span></div>
+      <div class="bigstats__item"><b class="mono">50 mm</b><span class="mono">座舱更低</span></div>
+      <div class="bigstats__item"><b class="mono">90°</b><span class="mono">蝶翼门开度</span></div>
+      <div class="bigstats__item"><b class="mono">24 h</b><span class="mono">行李箱空间 · 首次</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 动力总成 ============ -->
+<div class="chapter-break" data-ch="04"><span class="chapter-break__watermark" aria-hidden="true">POWERTRAIN</span><div class="wrap"><span class="cb__no mono">04</span><h2 class="cb__name">动力总成<span class="cb__en">POWERTRAIN</span></h2><span class="cb__meta mono">CHAPTER 04 / 08</span>
+      <p class="cb__lead">900 hp 自然吸气的纯粹，与 300 hp 电机的敏捷，在此合奏。</p></div></div>
+<section class="powertrain section" id="powertrain" data-num="04">
+  <div class="wrap">
+    <h2 class="sec-title reveal">300 hp/l，法拉利史上最高升功率</h2>
+    <div class="lead-grid">
+      <div class="story__lead reveal">
+        <p>三升 120° V6 F163CF 输出 900 hp 峰值功率——300 hp/l 的升功率，是法拉利史上最高的发动机升功率。混合动力系统再注入 300 hp，综合功率达到 <b>1,200 hp</b>。</p>
+        <p>它并非横空出世。发动机的架构、曲轴箱、正时布置与传动链、油泵回路、轴承、喷油器与 GDI 泵，与两夺勒芒 24 小时冠军的 <b>499P</b> 一脉相承；MGU-K 与 MGU-H 的概念，则直接来自一级方程式。</p>
+        <p>来自 F1 的 MGU-H 技术，在 F80 上以<b>电动涡轮</b>的全新形态落地——电机置于涡轮与压气机之间，从低转速起便提供瞬时响应，让涡轮迟滞成为过去。</p>
+      </div>
+      <figure class="lead-grid__img reveal">
+        <img src="assets/img/f80-engine-avif.webp" alt="F163CF 发动机" loading="lazy">
+        <figcaption class="mono">F163CF · 3.0L V6 120°</figcaption>
+      </figure>
+    </div>
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b class="mono">900</b><span class="mono">hp 峰值功率</span></div>
+      <div class="bigstats__item"><b class="mono">300</b><span class="mono">hp/l 升功率</span></div>
+      <div class="bigstats__item"><b class="mono">860 V</b><span class="mono">高压系统</span></div>
+      <div class="bigstats__item"><b class="mono">30,000</b><span class="mono">电机最高转速 rpm</span></div>
+    </div>
+    <div class="pt__three">
+      <article class="ptcard reveal">
+        <h3 class="mono">01 · V6 发动机</h3>
+        <p class="ptcard__big mono">F163CF</p>
+        <ul>
+          <li>3.0 L 自然吸气 · V6 120°</li>
+          <li>850 Nm @ 5500 rpm · 红线 9,000</li>
+          <li>与 296 GTB 的 V6 等重，+237 hp</li>
+        </ul>
+        <p class="ptcard__note">轻量化材料的胜利，也是声浪的胜利。</p>
+      </article>
+      <article class="ptcard reveal">
+        <h3 class="mono">02 · 电动涡轮</h3>
+        <p class="ptcard__big mono">e-turbo</p>
+        <ul>
+          <li>电机位于涡轮与压气机之间</li>
+          <li>消除涡轮迟滞 · 低转瞬响</li>
+          <li>法拉利公路车历史上的第一次</li>
+        </ul>
+        <p class="ptcard__note">源自 F1 的 MGU-H 概念，以全新形态落地。</p>
+      </article>
+      <article class="ptcard reveal">
+        <h3 class="mono">03 · 电机与电池</h3>
+        <p class="ptcard__big mono">+300 <span>hp</span></p>
+        <ul>
+          <li>前轴双电机 + 后置 MGU-K · 马拉内罗自研</li>
+          <li>Halbach 阵列 · 碳纤维磁套</li>
+          <li>2.28 kWh · 6.16 kW/kg · 39.3 kg</li>
+        </ul>
+        <p class="ptcard__note">综合功率 1,200 hp——马拉内罗史上最强公路跑车。</p>
+      </article>
+    </div>
+    <div class="media-row media-row--rev zoom reveal">
+      <figure class="media-row__img">
+        <img src="assets/img/670d2bef4cfd1f0079c40dae-ferrari-f80-powertrain-2024-focus-1-desk.webp" alt="动力总成" loading="lazy">
+        <figcaption class="mono">Powertrain</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>为重心而生的每一克</h3>
+        <p>发动机被尽可能压低安装，贴近平坦的底盘底板——油底壳下方没有任何部件突出曲轴中心线 100 mm 以上；动力单元在 Z 轴倾斜 1.3°，让变速箱让位于空气动力学底板。</p>
+        <ul>
+          <li><span>点火顺序</span><b>1-6-3-4-2-5，独属法拉利 V6 的声线</b></li>
+          <li><span>排气歧管</span><b>Inconel 合金，为声浪调校</b></li>
+          <li><span>连杆与活塞</span><b>钛合金连杆 · DLC 涂层活塞销</b></li>
+          <li><span>缸内直喷</span><b>350 bar 中央喷油 · 多段喷射</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="media-row zoom reveal">
+      <figure class="media-row__img">
+        <img src="assets/img/670e263badbe5f001082e1ec-ferrari-250-tech-spech-focus-engine-desk-rotate-flipv.webp" alt="混合动力系统" loading="lazy">
+        <figcaption class="mono">Hybrid system · 混合动力</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>一个 DC/DC，三种电压</h3>
+        <p>800 V 高压直流的 48 V 输出来驱动主动悬挂与电动涡轮，12 V 输出来驱动电子控制单元与全部电气附件——转换效率超过 98%，无需 48 V 电池，重量与布局双双受益。</p>
+        <ul>
+          <li><span>前轴总成</span><b>双电机 + 逆变器 + 冷却 · 61.5 kg</b></li>
+          <li><span>机械效率</span><b>损耗 −20% · 噪声 −10 dB</b></li>
+          <li><span>扭矩矢量</span><b>前轴独立控矩，入弯更锐利</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 空气动力学 ============ -->
+<div class="chapter-break" data-ch="05"><span class="chapter-break__watermark" aria-hidden="true">AERODYNAMICS</span><div class="wrap"><span class="cb__no mono">05</span><h2 class="cb__name">空气动力学<span class="cb__en">AERODYNAMICS</span></h2><span class="cb__meta mono">CHAPTER 05 / 08</span>
+      <p class="cb__lead">一吨下压力——来自空气的契约。</p></div></div>
+<section class="aero section" id="aero" data-num="05">
+  <div class="wrap">
+    <div class="story__lead reveal">
+      <p>主动尾翼、后扩散器、平整底板、前部三翼与 S-Duct 协同工作，在 250 km/h 时生成 1,000 kg 下压力——而主动悬挂直接参与生成的地面效应，让这一数字更加惊人。点击车身上的红点，探索空气如何被驯服。</p>
+    </div>
+  </div>
+  <div class="vsection" id="vaero">
+    <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670d2e124cfd1f0079c40db0-ferrari-f80-aerodynamics-s-duct-desk.webp">
+      <source src="assets/video/aero-sduct.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker mono">MASTER OF THE AIR</p>
+      <h3 class="vsection__title">驭风者</h3>
+      <p class="vsection__text">每一处进气皆有理由——没有一颗开孔是装饰。</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="aero-stage" id="aeroStage">
+      <div class="aero__viewer">
+        <div class="aero__media is-active" data-aero="main">
+          <img src="assets/img/670d2d6fcd61b70010d5e544-ferrari-f80-aerodynamics-intro-hotspot-desk.webp" alt="F80 空气动力学" width="1600" height="900">
+        </div>
+        <div class="aero__media" data-aero="wing">
+          <img src="assets/img/670d2ead4cfd1f0079c40db2-ferrari-f80-aerodynamics-rear-wing-desk.webp" alt="主动尾翼" width="1600" height="900" loading="lazy">
+        </div>
+        <div class="aero__media" data-aero="cooling">
+          <img src="assets/img/670d30764cfd1f0079c40db3-ferrari-f80-aerodynamics-cooling-desk.webp" alt="冷却系统" width="1600" height="900" loading="lazy">
+        </div>
+        <div class="aero__media" data-aero="floor">
+          <img src="assets/img/670d31313112f10079d5fc94-ferrari-f80-aerodynamics-ground-effect-desk.webp" alt="地面效应" width="1600" height="900" loading="lazy">
+        </div>
+        <button class="aero__hotspot" data-aero="wing" aria-label="主动尾翼"><span class="aero__dot"></span><i>ACTIVE REAR WING</i></button>
+        <button class="aero__hotspot" data-aero="cooling" aria-label="冷却系统"><span class="aero__dot"></span><i>COOLING</i></button>
+        <button class="aero__hotspot" data-aero="floor" aria-label="地面效应"><span class="aero__dot"></span><i>GROUND EFFECT</i></button>
+      </div>
+      <div class="aero__panel" id="aeroPanel">
+        <div class="aero__panel-item is-active" data-aero="main">
+          <h3>为空气而生的每一根线条</h3>
+          <p>空气动力学与热管理在设计之初便协同规划：散热质量块的布置，为最大化自由来流与垂直载荷留出空间。主动式前部三翼与尾翼，让下压力随驾驶状态实时调节。</p>
+        </div>
+        <div class="aero__panel-item" data-aero="wing">
+          <h3>主动尾翼</h3>
+          <p>自适应空气动力学的核心。控制系统实时测量加速度、速度与转向角，在制动与过弯所需的高下压力 (HD) 与直线所需的低阻力 (LD) 之间无级调整翼角——连同主动悬挂的位置与前部 Active Reverse Gurney 的激活，共同寻找载荷、平衡与阻力之间的最佳解。</p>
+        </div>
+        <div class="aero__panel-item" data-aero="cooling">
+          <h3>高度先进的冷却系统</h3>
+          <p>热布局与空气动力学协同设计，在维持垂直载荷生成能力的同时保证最大功能：散热单元的位置、气流通道的走向，每一度都被计算。</p>
+        </div>
+        <div class="aero__panel-item" data-aero="floor">
+          <h3>极致地面效应</h3>
+          <p>三维空气动力学底板要求激进的选择：前部采用赛车式驾驶姿态，以实现极低的车头方案；主动悬挂直接参与地面效应的生成，让车身在任意时刻保持与地面的最佳对话。</p>
+        </div>
+      </div>
+    </div>
+    <div class="aero__list">
+      <article class="reveal">
+        <span class="mono aero__no">01</span>
+        <h3>极速时，尾翼收起</h3>
+        <p>HD 与 LD 之间无级可调：制动与过弯时高下压力，直线时低阻力——从容，来自每一毫秒的动态平衡。</p>
+      </article>
+      <article class="reveal">
+        <span class="mono aero__no">02</span>
+        <h3>冷却与下压力的合谋</h3>
+        <p>散热单元的位置与气流通道的走向，在维持垂直载荷生成能力的同时保证最大功能——每一度都被计算。</p>
+      </article>
+      <article class="reveal">
+        <span class="mono aero__no">03</span>
+        <h3>三维底板，地面效应</h3>
+        <p>赛车式驾驶姿态让车头低至极限，主动悬挂直接参与下压力生成——与地面的最佳对话，在任意时刻。</p>
+      </article>
+      <article class="reveal">
+        <span class="mono aero__no">04</span>
+        <h3>S-Duct 前脸</h3>
+        <p>连接两侧前翼的固定元件与两道随主轮廓运动的襟翼，让气流管理完整闭环——功能性设计语言的典范。</p>
+      </article>
+    </div>
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b class="mono">1,000</b><span class="mono">kg @ 250 km/h</span></div>
+      <div class="bigstats__item"><b class="mono">1,050</b><span class="mono">kg 峰值下压力</span></div>
+      <div class="bigstats__item"><b class="mono">HD/LD</b><span class="mono">尾翼无级调节</span></div>
+      <div class="bigstats__item"><b class="mono">3</b><span class="mono">主动空动部件</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 底盘与动态 ============ -->
+<div class="chapter-break" data-ch="06"><span class="chapter-break__watermark" aria-hidden="true">ARCHITECTURE</span><div class="wrap"><span class="cb__no mono">06</span><h2 class="cb__name">底盘与动态<span class="cb__en">ARCHITECTURE</span></h2><span class="cb__meta mono">CHAPTER 06 / 08</span>
+      <p class="cb__lead">从零开始的架构，与一个数字孪生的大脑。</p></div></div>
+<section class="architecture section" id="architecture" data-num="06">
+  <div class="wrap">
+    <h2 class="sec-title reveal">从零开始，只为性能而生</h2>
+    <div class="story__lead reveal">
+      <p>F80 的底盘完全从白纸开始设计。多材料策略让每种材料各就其位：碳纤维与复合材料的单体壳与车顶、铝合金前后副车架、钛合金螺栓连接。与 LaFerrari 相比，重量降低 5%，扭转与弯曲刚度提升 50%。</p>
+      <p>中空的碳纤维门槛是主要承力元件，双气囊成型工艺直接来自一级方程式；如 LaFerrari 一般，门槛同时是侧向碰撞的吸能结构。</p>
+    </div>
+  </div>
+  <div class="vsection" id="vchassis">
+    <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670e292f21404600566636dc-ferrari-250-tech-spech-focus-chassis-desk.webp">
+      <source src="assets/video/chassis.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker mono">CHASSIS</p>
+      <h3 class="vsection__title">碳纤维的骨架</h3>
+      <p class="vsection__text">中空碳纤维门槛承载侧向载荷——如 LaFerrari 一般，成为侧向碰撞的吸能结构。</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="media-row zoom reveal">
+      <figure class="media-row__img">
+        <video src="assets/video/suspension.mp4" autoplay muted loop playsinline preload="metadata" poster="assets/img/670e136e4cfd1f0079c40dd2-ferrari-f80-scroll_zenitale_sospensioni.webp"></video>
+        <figcaption class="mono">Active suspension · 主动悬挂</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>主动悬挂</h3>
+        <p>四个 48V 电机独立驱动的主动悬挂，双叉臂布局、主动内阻尼器、3D 打印摆臂——它同时满足两个看似不可调和的要求：赛道上的极致平坦，与公路上的极致舒适。</p>
+        <ul>
+          <li><span>驱动方式</span><b>四台 48V 电机 · 完全独立</b></li>
+          <li><span>摆臂</span><b>3D 打印制造</b></li>
+          <li><span>地面效应</span><b>直接参与下压力生成</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="media-row media-row--rev zoom reveal">
+      <figure class="media-row__img">
+        <img src="assets/img/670e5ac31eb0fa005567191e-ferrari-f80-interior-social-card.webp" alt="SSC 9.0" loading="lazy">
+        <figcaption class="mono">SSC 9.0 · Side Slip Control</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>SSC 9.0 · 数字孪生</h3>
+        <p>全新的 SSC 9.0 侧滑控制系统，受益于集成的 FIVE 车辆状态估计器：基于数字孪生概念的数学模型，实时估计横摆角与整车质心速度——精度分别优于 1° 与 1 km/h。</p>
+        <ul>
+          <li><span>估计精度</span><b>横摆角 &lt;1° · 质心速度 &lt;1 km/h</b></li>
+          <li><span>受益系统</span><b>牵引力控制等全部动态控制</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b class="mono">−5%</b><span class="mono">重量 · vs LaFerrari</span></div>
+      <div class="bigstats__item"><b class="mono">+50%</b><span class="mono">扭转与弯曲刚度</span></div>
+      <div class="bigstats__item"><b class="mono">&lt;1°</b><span class="mono">横摆角估计精度</span></div>
+      <div class="bigstats__item"><b class="mono">4×48V</b><span class="mono">主动悬挂电机</span></div>
+    </div>
+
+    <!-- 制动 -->
+    <div class="vsection" id="vbrakes">
+      <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670f682d57a595000f7361a6-ferrari-f80-dynamics-cover-new-desk.webp">
+        <source src="assets/video/brakes-brm.mp4" type="video/mp4">
+      </video>
+      <div class="vsection__veil"></div>
+      <div class="vsection__content">
+        <p class="vsection__kicker mono">CCM-R PLUS · 与 Brembo 共同开发</p>
+        <h3 class="vsection__title">制动的极限，被重新定义</h3>
+        <p class="vsection__text">更长碳纤维 · 机械强度 +100% · 热导率 +300% · 从 100 km/h 刹停仅需 28 米。</p>
+      </div>
+    </div>
+    <div class="media-row zoom reveal">
+      <figure class="media-row__img">
+        <img src="assets/img/670e5aef2140460056663715-ferrari-f80-suspensions-social-card.webp" alt="CCM-R Plus 制动系统" loading="lazy">
+        <figcaption class="mono">CCM-R Plus · carbon ceramic</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>CCM-R Plus</h3>
+        <p>公路车历史上的第一次：更长碳纤维带来机械强度 +100%、热导率 +300% 的提升；碳化硅涂层让磨损与磨合期双双缩短；F1 应用衍生、CFD 优化的双排通风道，让制动的极限被重新定义。</p>
+        <ul>
+          <li><span>前制动盘</span><b>408 × 220 × 38 mm · 6 活塞</b></li>
+          <li><span>后制动盘</span><b>390 × 263 × 32 mm · 4 活塞</b></li>
+          <li><span>轮胎</span><b>Michelin Cup2 / Cup2R</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 驾驶模式 -->
+    <h3 class="modes__title mono">eManettino · 三种性格</h3>
+    <div class="modes">
+      <article class="modecard reveal">
+        <h4 class="mono">HYBRID</h4>
+        <p class="modecard__sub">稳定，先于一切</p>
+        <p>默认模式。优先能量回收与保电，让 MGU-K 随时准备释放助力——公路与长途皆宜。</p>
+      </article>
+      <article class="modecard reveal">
+        <h4 class="mono">PERFORMANCE</h4>
+        <p class="modecard__sub">持续，才是一切</p>
+        <p>面向赛道长距离驾驶，优化能量流向，将电池电量维持在约 70%，持续输出不间断。</p>
+      </article>
+      <article class="modecard reveal">
+        <h4 class="mono">QUALIFY</h4>
+        <p class="modecard__sub">全力，不留余地</p>
+        <p>释放全部 1,200 hp。升档时以电子扭矩塑形，将电机与内燃机的扭矩曲线以最佳组合压榨。</p>
+      </article>
+    </div>
+    <p class="story__note reveal">Performance 与 Qualify 模式还提供整个汽车行业的第一个功能——<b>Boost Optimization</b>：系统记录赛道，识别弯道与直道，在需要的地方自动释放额外动力。</p>
+    <p class="story__note reveal">与当前超级跑车世界中的任何一台都不同，F80 将极致性能与毫不妥协的公路易用性融为一体。ADAS 驾驶辅助系统全系标配：自适应巡航（带 Stop&amp;Go）、自动紧急制动、车道偏离预警、车道保持、自动远光、交通标志识别与疲劳监测。</p>
+  </div>
+</section>
+
+<!-- ============ 07 技术规格 ============ -->
+<div class="chapter-break" data-ch="07"><span class="chapter-break__watermark" aria-hidden="true">SPECIFICATIONS</span><div class="wrap"><span class="cb__no mono">07</span><h2 class="cb__name">技术规格<span class="cb__en">SPECIFICATIONS</span></h2><span class="cb__meta mono">CHAPTER 07 / 08</span>
+      <p class="cb__lead">全部数据，一次列清。</p></div></div>
+<section class="techspec section" id="specs" data-num="07">
+  <div class="vsection" id="vspecs">
+    <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670d3d32e4530000793bb76a-ferrari-f80-tech-specs-desktop.webp">
+      <source src="assets/video/techspec-intro.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker mono">TECHNICAL SPECIFICATIONS</p>
+      <h3 class="vsection__title">数字，从不撒谎</h3>
+      <p class="vsection__text">以下全部参数，来自法拉利官方技术数据表。</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="accel reveal">
+      <div class="accel__item"><b class="mono">2.15 s</b><span class="mono">0–100 km/h</span></div>
+      <div class="accel__item"><b class="mono">5.75 s</b><span class="mono">0–200 km/h</span></div>
+      <div class="accel__item"><b class="mono">28 m</b><span class="mono">100–0 km/h 制动</span></div>
+      <div class="accel__item"><b class="mono">98 m</b><span class="mono">200–0 km/h 制动</span></div>
+    </div>
+    <p class="perf__note mono">* 最高时速 350 km/h · 干重 1,525 kg · 重量功率比 1.27 kg/hp</p>
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="1200" data-max="1500" data-unit="hp" data-label="综合功率">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">hp</span></figcaption>
+        </div>
+        <p class="gauge__label">综合功率<br><small>V6 900 hp + 混动 300 hp</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="350" data-max="400" data-unit="km/h" data-label="最高时速">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">km/h</span></figcaption>
+        </div>
+        <p class="gauge__label">最高时速<br><small>马拉内罗之最</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1000" data-max="1200" data-unit="kg" data-label="下压力 @ 250 km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">kg</span></figcaption>
+        </div>
+        <p class="gauge__label">下压力 @ 250 km/h<br><small>主动空气动力学的极限</small></p>
+      </figure>
+    </div>
+    <div class="spec-table reveal">
+      <div class="spec-table__row"><span class="mono">综合功率</span><b>1,200 hp（V6 900 hp + 混动 300 hp）</b></div>
+      <div class="spec-table__row"><span class="mono">发动机</span><b>F163CF · 3.0 L V6 120° 自然吸气 · 900 hp @ 8750 rpm · 850 Nm @ 5500 rpm · 9,000 rpm（动态限制 9,200）· 压缩比 9.5:1 · 300 hp/l</b></div>
+      <div class="spec-table__row"><span class="mono">混动系统</span><b>前轴双电机（各 105 kW）+ 后置 MGU-K（再生 70 kW / 辅助 60 kW）· 860 V · 电池 2.28 kWh / 242 kW / 6.16 kW/kg</b></div>
+      <div class="spec-table__row"><span class="mono">加速</span><b>0–100 km/h 2.15 s · 0–200 km/h 5.75 s · 100–0 km/h 28 m · 200–0 km/h 98 m</b></div>
+      <div class="spec-table__row"><span class="mono">极速</span><b>350 km/h</b></div>
+      <div class="spec-table__row"><span class="mono">下压力</span><b>1,000 kg @ 250 km/h（峰值 1,050 kg）</b></div>
+      <div class="spec-table__row"><span class="mono">质量</span><b>干重 1,525 kg（含选装）· 重量功率比 1.27 kg/hp · 前 42.2% / 后 57.8%</b></div>
+      <div class="spec-table__row"><span class="mono">尺寸</span><b>长 4,840 mm · 宽 2,060 mm · 高 1,138 mm · 轴距 2,665 mm · 前/后轮距 1,701 / 1,660 mm · 油箱 63.5 L</b></div>
+      <div class="spec-table__row"><span class="mono">变速箱</span><b>F1 DCT 8 速双离合</b></div>
+      <div class="spec-table__row"><span class="mono">电子控制</span><b>SSC 9.0（TC · eDiff · SCM · Php 3.0 · FDE 2.0 · EPS · ABS-Evo · 6D 传感器）</b></div>
+      <div class="spec-table__row"><span class="mono">车身</span><b>碳纤维单体壳 + 铝副车架（钛螺栓）· 双气囊成型 · 蝴蝶门</b></div>
+      <div class="spec-table__row"><span class="mono">悬挂</span><b>主动悬挂 · 4×48V 电机 · 双叉臂 · 主动内阻尼 · 3D 打印摆臂</b></div>
+      <div class="spec-table__row"><span class="mono">制动</span><b>CCM-R Plus 碳陶（Brembo）· 前 408×220×38 mm 6 活塞 · 后 390×263×32 mm 4 活塞</b></div>
+      <div class="spec-table__row"><span class="mono">轮胎</span><b>Michelin Pilot Sport Cup2 / Cup2R · 前 285/30 R20 · 后 345/30 R21</b></div>
+      <div class="spec-table__row"><span class="mono">驾驶模式</span><b>eManettino：Hybrid · Performance · Qualify（含 Boost Optimization）</b></div>
+      <div class="spec-table__row"><span class="mono">限量</span><b>799 台</b></div>
+      <div class="spec-table__row"><span class="mono">油耗 / 排放</span><b>综合 13.5 l/100km · CO₂ 综合 307 g/km（WLTP，EC 715/2007）</b></div>
+    </div>
+    <p class="specs__note mono">* 规格数据来源：ferrari.com 车型页与官方发布稿（2024-10-17）。</p>
+  </div>
+</section>
+
+<!-- ============ 08 总结 ============ -->
+<section class="conclusion section" id="conclusion" data-num="08">
+  <div class="wrap">
+    <div class="conclusion__inner">
+      <p class="conclusion__en mono">MARANELLO · PRANCING HORSE</p>
+      <h2 class="conclusion__title">下一个时代的序章</h2>
+      <div class="final-stats reveal">
+        <div class="final-stats__item"><b class="mono">1,200</b><span class="mono">hp</span></div>
+        <div class="final-stats__item"><b class="mono">799</b><span class="mono">台</span></div>
+        <div class="final-stats__item"><b class="mono">2025</b><span class="mono">年起交付</span></div>
+      </div>
+      <p class="conclusion__lead reveal">一台 1,200 hp 的机器，一套为极致而生的架构，一个传奇谱系的最新成员。799 台，每一台都承载着马拉内罗的偏执。它同时带来超级跑车历史上第一个<b> 7 年保养计划</b>——每 20,000 km 或每年一次的定期维护、原厂零件、马拉内罗培训中心直接培训的技师。GTO 开创了传奇，F40 定义了信仰，LaFerrari 证明了混动的可能——而 F80，是下一个时代的序章。</p>
+      <div class="conclusion__links reveal">
+        <a class="conclusion__btn mono" href="https://www.ferrari.com/en-EN/auto/f80" target="_blank" rel="noopener">访问官方网站</a>
+        <a class="conclusion__btn conclusion__btn--ghost mono" href="https://www.ferrari.com/en-EN/media-centre/articles/f80-ferraris-new-supercar" target="_blank" rel="noopener">浏览官方发布稿</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <p class="footer__brand mono">FERRARI <span>F80</span></p>
+      <p class="footer__links mono">
+        <a href="en.html">English</a>
+      </p>
+    </div>
+    <div class="footer__disclaimer">
+      <p>本站为爱好者制作的介绍站点，内容、图片与视频均来自法拉利官方车型页与官方发布稿，供学习与展示之用。Ferrari、F80 及相关商标、图片版权归 Ferrari S.p.A. 所有。性能数据以官方发布为准。</p>
+    </div>
+  </div>
+</footer>
+
+<!-- 图库灯箱(备用) -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" data-lb-close aria-label="关闭">×</button>
+  <button class="lightbox__prev" data-lb-prev aria-label="上一张">‹</button>
+  <figure class="lightbox__stage">
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lightbox__next" data-lb-next aria-label="下一张">›</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+

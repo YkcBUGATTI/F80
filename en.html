@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferrari F80 · The new supercar from the Prancing Horse</title>
+<meta name="description" content="Ferrari F80: 1200 hp hybrid V6, 300 hp/l, 1000 kg of downforce, 799 examples. Content from ferrari.com and the official press release.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ferrari F80 · The new supercar from the Prancing Horse">
+<meta property="og:description" content="Ferrari F80: 1200 hp hybrid V6, limited to 799 examples.">
+<meta property="og:image" content="assets/img/670e179521404600566636d2-ferrari-f80-photo-reveal-website-desk.webp">
+<meta property="og:url" content="https://www.ferrari.com/en-EN/auto/f80">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="assets/img/f80-favicon.png">
+</head>
+<body>
+
+<div class="cursor" aria-hidden="true"><span></span></div>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <span class="nav__now mono" id="navNow">01 · Origin</span>
+    <a class="nav__brand is-hidden" href="#hero">
+      <span class="nav__brand-mark">FERRARI <span>F80</span></span>
+    </a>
+    <span class="nav__lang">
+      <a class="lang-btn mono" href="index.html" onclick="localStorage.setItem('f80-lang','zh')">中</a>
+      <button class="nav__menu-btn mono" id="menuBtn" aria-label="Chapters" aria-expanded="false"><span class="nav__menu-icon"><i></i><i></i><i></i></span></button>
+    </span>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navBar"></i></div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay" hidden>
+  <nav class="menu-overlay__nav" aria-label="Chapters"></nav>
+</div>
+
+<aside class="index-rail" aria-label="Chapter index">
+  <div class="index-rail__title mono">Index</div>
+  <nav class="index-rail__nav" id="indexNav"></nav>
+  <div class="index-rail__progress"><span class="mono" id="railPct">00%</span></div>
+</aside>
+
+<div class="scroll-gauge" aria-hidden="true">
+  <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle class="sg__bar" cx="22" cy="22" r="19"/></svg>
+  <span class="sg__num mono">00</span>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero" data-num="00">
+  <div class="hero__media">
+    <video class="hero__video" autoplay muted loop playsinline preload="auto"
+           poster="assets/img/670e179521404600566636d2-ferrari-f80-photo-reveal-website-desk.webp">
+      <source src="assets/video/aero-intro.mp4" type="video/mp4">
+    </video>
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__content">
+    <p class="hero__kicker mono">MARANELLO · 2024</p>
+    <h1 class="hero__title">F80</h1>
+    <p class="hero__sub">The new supercar from the Prancing Horse</p>
+    <p class="hero__desc">Since 1984, Ferrari has defined each era with a new supercar. Now, with 1200 hp of hybrid V6 power, the F80 becomes the most powerful road-going Ferrari ever created.</p>
+    <div class="hero__specs mono">
+      <span><b class="count" data-to="1200">0</b> hp</span>
+      <span><b class="count" data-to="350">0</b> km/h</span>
+      <span><b class="count" data-to="799">0</b> examples</span>
+    </div>
+  </div>
+  <div class="hero__scroll mono">SCROLL <span class="hero__line"></span></div>
+</section>
+
+<!-- ============ 01 ORIGIN ============ -->
+<div class="chapter-break" data-ch="01"><span class="chapter-break__watermark" aria-hidden="true">LEGACY</span><div class="wrap"><span class="cb__no mono">01</span><h2 class="cb__name">Origin<span class="cb__en">THE LEGACY</span></h2><span class="cb__meta mono">CHAPTER 01 / 08</span>
+      <p class="cb__lead">Every supercar since 1984 has defined its own era.</p></div></div>
+<section class="story section" id="story" data-num="01">
+  <div class="wrap">
+    <h2 class="sec-title reveal">A car destined to become a legend</h2>
+    <div class="story__lead reveal">
+      <p>Since 1984, Ferrari has periodically released a new supercar that represented the pinnacle of cutting-edge technology and innovation of its era. Intended for the most discerning clients of the brand, these cars immediately became legends in their own lifetime — making an indelible mark not only on the history of Ferrari, but on the history of the automobile itself.</p>
+      <p>Now the latest addition to this family, the F80, will be produced in a limited run of just <b>799</b> examples. It joins the pantheon of icons such as the GTO, F40 and LaFerrari by showcasing the best that Maranello has achieved in technology and performance.</p>
+    </div>
+    <div class="heritage__row">
+      <article class="hcard reveal">
+        <div class="hcard__year mono">1984</div>
+        <h3>GTO</h3>
+        <p class="mono hcard__num">The beginning</p>
+        <p>The starting point of the supercar lineage — the pinnacle of its era.</p>
+      </article>
+      <article class="hcard reveal">
+        <div class="hcard__year mono">1987</div>
+        <h3>F40</h3>
+        <p class="mono hcard__num">The icon</p>
+        <p>The last project personally approved by Enzo Ferrari — purity in its most essential form.</p>
+      </article>
+      <article class="hcard reveal">
+        <div class="hcard__year mono">2013</div>
+        <h3>LaFerrari</h3>
+        <p class="mono hcard__num">The hybrid pioneer</p>
+        <p>Ferrari's first hybrid supercar — electrification and performance, united.</p>
+      </article>
+      <article class="hcard hcard--now reveal">
+        <div class="hcard__year mono">2024</div>
+        <h3>F80</h3>
+        <p class="mono hcard__num">The pinnacle</p>
+        <p>The most powerful road-going Ferrari ever — 1200 hp of hybrid power.</p>
+      </article>
+    </div>
+    <blockquote class="quote reveal">
+      <p>"The F80 is Ferrari's new supercar, a car destined to join iconic models from the 1984 GTO to the 2016 LaFerrari Aperta."</p>
+      <footer>— Ferrari · Official release</footer>
+    </blockquote>
+  </div>
+
+<!-- ============ 02 DESIGN ============ -->
+<div class="chapter-break" data-ch="02"><span class="chapter-break__watermark" aria-hidden="true">DESIGN</span><div class="wrap"><span class="cb__no mono">02</span><h2 class="cb__name">Design<span class="cb__en">DESIGN</span></h2><span class="cb__meta mono">CHAPTER 02 / 08</span>
+      <p class="cb__lead">Aerospace language and Ferrari DNA, for the first time truly one.</p></div></div>
+<section class="design section" id="design" data-num="02">
+  <div class="wrap">
+    <h2 class="sec-title reveal">A new design era, born of aerospace</h2>
+    <div class="story__lead reveal">
+      <p>The F80 has a strongly futuristic visual impact with unmistakable references to aerospace. Led by Flavio Manzoni, the Ferrari Styling Centre first turned to the aesthetics of the marque's F1 cars — forging a link between the past and future of Ferrari design.</p>
+      <p>From the very first sketches, the project evolved in a process of natural convergence with engineering, aerodynamics and ergonomics — every line must answer one question: does it serve performance?</p>
+    </div>
+    <div class="design__grid">
+      <article class="dcard tilt reveal">
+        <img src="assets/img/6710d019bd9b5300108809af-ferrari-f80-exterior-focus-1-new.webp" alt="Dihedral section" loading="lazy">
+        <div class="dcard__body">
+          <h3>Dihedral section</h3>
+          <p>The architecture is defined by a dihedral cross section with its two bottom corners firmly planted on the wheels. The sculpted rear flow emphasises the muscularity of the rear wing.</p>
+        </div>
+      </article>
+      <article class="dcard tilt reveal">
+        <img src="assets/img/670e179521404600566636d2-ferrari-f80-photo-reveal-website-desk.webp" alt="A tribute to the F40" loading="lazy">
+        <div class="dcard__body">
+          <h3>A tribute to the F40</h3>
+          <p>The wheelarch ends with a vertical panel that stands proud of the door — the visual language of the F40, reborn.</p>
+        </div>
+      </article>
+      <article class="dcard tilt reveal">
+        <img src="assets/img/670d2d6fcd61b70010d5e544-ferrari-f80-aerodynamics-intro-hotspot-desk-mirror.webp" alt="Function is form" loading="lazy">
+        <div class="dcard__body">
+          <h3>Function is form</h3>
+          <p>The greenhouse sits 50 mm lower than the LaFerrari's; butterfly doors open to almost 90°; the NACA duct channels air towards the engine intake and lateral radiators — as iconic as it is functional.</p>
+        </div>
+      </article>
+      <article class="dcard tilt reveal">
+        <img src="assets/img/6710d018dcd6130010c3519f-ferrari-f80-exterior-focus-2-new.webp" alt="Two zones" loading="lazy">
+        <div class="dcard__body">
+          <h3>Two zones</h3>
+          <p>The contrast between the upper zone in bodywork colour and the lower zone in clear-coat carbon fibre reveals more of the technical side with each glance.</p>
+        </div>
+      </article>
+    </div>
+    <blockquote class="quote reveal">
+      <p>"None of what we have achieved with the F80 are easy things to do. They're only possible if you implement this kind of strategy from the very first pencil stroke."</p>
+      <footer>— Ferrari Styling Centre · Flavio Manzoni</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ 03 INTERIOR ============ -->
+<div class="chapter-break" data-ch="03"><span class="chapter-break__watermark" aria-hidden="true">INTERIOR</span><div class="wrap"><span class="cb__no mono">03</span><h2 class="cb__name">Interior<span class="cb__en">INTERIOR</span></h2><span class="cb__meta mono">CHAPTER 03 / 08</span>
+      <p class="cb__lead">A cocoon around the driver — an enclosed Formula 1 car.</p></div></div>
+<section class="interior section" id="interior" data-num="03">
+  <div class="wrap">
+    <h2 class="sec-title reveal">A “1+” cab centred on the driver</h2>
+    <div class="story__lead reveal">
+      <p>The compact proportions were made possible by opting for a cabin inspired by single-seat racers — an impression akin to an enclosed Formula 1 car. A lengthy process involving designers, engineers, ergonomics specialists and Colour &amp; Trim experts sets the driver unequivocally as the protagonist.</p>
+      <p>While ergonomically complete and comfortable, the passenger seat is so well integrated into the trim that it almost disappears from view. A longitudinal offset in the seats allows a narrower interior space — less drag, less weight — with no penalty in ergonomics or perceived comfort.</p>
+    </div>
+  </div>
+  <div class="vsection" id="vinterior">
+    <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670d339e1eb0fa00556718b8-ferrari-f80-interior-intro-desk.webp">
+      <source src="assets/video/interior-intro.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker mono">INTERIOR</p>
+      <h3 class="vsection__title">A cocoon built around the driver</h3>
+      <p class="vsection__text">Every form converges towards the controls and instrument panel.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="webcards webcards--inline">
+      <article class="webcard reveal">
+        <video class="webcard__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/670fd8fddcd6130010c3513b-f250_interni_hotspot_sedile_pilota_v07_desktop.webp">
+          <source src="assets/video/interior-seat.mp4" type="video/mp4">
+        </video>
+        <div class="webcard__body">
+          <span class="webcard__num mono">DRIVER'S SEAT</span>
+          <h3>The driver's seat</h3>
+          <p>The driver side has an adjustable seat with a generous range of positions, ensuring comfort and safety in the event of a side-on impact; the passenger side uses a fixed seat to save weight — uncompromised safety for both occupants.</p>
+        </div>
+      </article>
+      <article class="webcard reveal">
+        <video class="webcard__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/670d339ce4530000793bb757-ferrari-f80-interior-steering-wheel-desk.webp">
+          <source src="assets/video/interior-wheel.mp4" type="video/mp4">
+        </video>
+        <div class="webcard__body">
+          <span class="webcard__num mono">NEW STEERING WHEEL</span>
+          <h3>New steering wheel</h3>
+          <p>Developed specifically for this car, it will appear in future road-going models of the Prancing Horse. Slightly smaller, with flattened top and bottom rims — the physical buttons on the spokes make a return, identifiable by touch, with or without gloves.</p>
+        </div>
+      </article>
+      <article class="webcard reveal">
+        <video class="webcard__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/670fd8fa75d163001163a319-f250_interni_hotspot_panchetta_v07_desktop.webp">
+          <source src="assets/video/interior-luggage.mp4" type="video/mp4">
+        </video>
+        <div class="webcard__body">
+          <span class="webcard__num mono">24 HOUR SUITCASE SPACE</span>
+          <h3>24 hour suitcase space</h3>
+          <p>For the first time ever on a Ferrari Supercar, a space behind the seats large enough for a 24 hour suitcase, complete with a retainer mesh and straps. Usability, uncompromised.</p>
+        </div>
+      </article>
+    </div>
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b class="mono">1+</b><span class="mono">Cab layout</span></div>
+      <div class="bigstats__item"><b class="mono">50 mm</b><span class="mono">Lower greenhouse</span></div>
+      <div class="bigstats__item"><b class="mono">90°</b><span class="mono">Butterfly door opening</span></div>
+      <div class="bigstats__item"><b class="mono">24 h</b><span class="mono">Suitcase space · first</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 POWERTRAIN ============ -->
+<div class="chapter-break" data-ch="04"><span class="chapter-break__watermark" aria-hidden="true">POWERTRAIN</span><div class="wrap"><span class="cb__no mono">04</span><h2 class="cb__name">Powertrain<span class="cb__en">POWERTRAIN</span></h2><span class="cb__meta mono">CHAPTER 04 / 08</span>
+      <p class="cb__lead">900 hp of natural aspiration, 300 hp of electric agility.</p></div></div>
+<section class="powertrain section" id="powertrain" data-num="04">
+  <div class="wrap">
+    <h2 class="sec-title reveal">300 hp/l — the highest specific power ever</h2>
+    <div class="lead-grid">
+      <div class="story__lead reveal">
+        <p>The three-litre 120° V6 F163CF produces a peak power of 900 hp, for a specific power of 300 hp/l — the highest of any Ferrari engine ever. The hybrid system adds another 300 hp, for a combined maximum of <b>1,200 hp</b>.</p>
+        <p>Its lineage is unmistakable: the architecture, crankcase, layout and drive chains of the timing system, oil pump recovery circuit, bearings, injectors and GDI pumps are closely derived from the <b>499P</b> that won the last two editions of the 24 Hours of Le Mans. The concepts of the MGU-K and MGU-H come straight from Formula 1.</p>
+        <p>The MGU-H finds its road-going expression in <b>e-turbo</b> technology — an electric motor between turbine and compressor, delivering extraordinary specific power and instantaneous response. Turbo lag is negated.</p>
+      </div>
+      <figure class="lead-grid__img reveal">
+        <img src="assets/img/f80-engine-avif.webp" alt="F163CF engine" loading="lazy">
+        <figcaption class="mono">F163CF · 3.0L V6 120°</figcaption>
+      </figure>
+    </div>
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b class="mono">900</b><span class="mono">hp peak power</span></div>
+      <div class="bigstats__item"><b class="mono">300</b><span class="mono">hp/l specific power</span></div>
+      <div class="bigstats__item"><b class="mono">860 V</b><span class="mono">High-voltage system</span></div>
+      <div class="bigstats__item"><b class="mono">30,000</b><span class="mono">Max motor speed rpm</span></div>
+    </div>
+    <div class="pt__three">
+      <article class="ptcard reveal">
+        <h3 class="mono">01 · V6 ENGINE</h3>
+        <p class="ptcard__big mono">F163CF</p>
+        <ul>
+          <li>3.0 L naturally aspirated · V6 120°</li>
+          <li>850 Nm @ 5500 rpm · redline 9,000</li>
+          <li>Same weight as the 296 GTB's V6, +237 hp</li>
+        </ul>
+        <p class="ptcard__note">A triumph of light weight, and of sound.</p>
+      </article>
+      <article class="ptcard reveal">
+        <h3 class="mono">02 · E-TURBO</h3>
+        <p class="ptcard__big mono">e-turbo</p>
+        <ul>
+          <li>Electric motor between turbine and compressor</li>
+          <li>Turbo lag negated · instant response</li>
+          <li>A first for a Ferrari road car</li>
+        </ul>
+        <p class="ptcard__note">The MGU-H concept from F1, reborn for the road.</p>
+      </article>
+      <article class="ptcard reveal">
+        <h3 class="mono">03 · MOTORS &amp; BATTERY</h3>
+        <p class="ptcard__big mono">+300 <span>hp</span></p>
+        <ul>
+          <li>Front-axle twin motors + rear MGU-K · built in Maranello</li>
+          <li>Halbach array · carbon-fibre magnet sleeve</li>
+          <li>2.28 kWh · 6.16 kW/kg · 39.3 kg</li>
+        </ul>
+        <p class="ptcard__note">1,200 hp combined — the most powerful road-going Ferrari ever.</p>
+      </article>
+    </div>
+    <div class="media-row media-row--rev zoom reveal">
+      <figure class="media-row__img">
+        <img src="assets/img/670d2bef4cfd1f0079c40dae-ferrari-f80-powertrain-2024-focus-1-desk.webp" alt="Powertrain" loading="lazy">
+        <figcaption class="mono">Powertrain</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>Every gram, for the centre of gravity</h3>
+        <p>The engine is installed as close as physically possible to the flat undertray — no sump component sits more than 100 mm below the crankshaft centreline. The unit is tilted 1.3° on the Z axis, raising the gearbox to preserve the aerodynamic undertray.</p>
+        <ul>
+          <li><span>Firing order</span><b>1-6-3-4-2-5 — the Ferrari V6 timbre</b></li>
+          <li><span>Exhaust manifolds</span><b>Inconel, tuned for the sound</b></li>
+          <li><span>Reciprocating</span><b>Titanium rods · DLC-coated piston pins</b></li>
+          <li><span>Direct injection</span><b>350 bar central injectors · multiple strategies</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="media-row zoom reveal">
+      <figure class="media-row__img">
+        <img src="assets/img/670e263badbe5f001082e1ec-ferrari-250-tech-spech-focus-engine-desk-rotate-flipv.webp" alt="Hybrid system" loading="lazy">
+        <figcaption class="mono">Hybrid system</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>One DC/DC converter, three voltages</h3>
+        <p>From the 800 V direct current of the high-voltage battery, the Ferrari converter generates 48 V to power the active suspension and e-turbo systems, and 12 V for the electronic control units — with a conversion efficiency in excess of 98%, eliminating the need for a 48 V battery.</p>
+        <ul>
+          <li><span>Front axle</span><b>Two motors + inverter + cooling · 61.5 kg</b></li>
+          <li><span>Mechanical efficiency</span><b>Losses −20% · noise −10 dB</b></li>
+          <li><span>Torque vectoring</span><b>Independent front-axle torque control</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 AERODYNAMICS ============ -->
+<div class="chapter-break" data-ch="05"><span class="chapter-break__watermark" aria-hidden="true">AERODYNAMICS</span><div class="wrap"><span class="cb__no mono">05</span><h2 class="cb__name">Aerodynamics<span class="cb__en">AERODYNAMICS</span></h2><span class="cb__meta mono">CHAPTER 05 / 08</span>
+      <p class="cb__lead">A tonne of downforce — a pact with the air.</p></div></div>
+<section class="aero section" id="aero" data-num="05">
+  <div class="wrap">
+    <div class="story__lead reveal">
+      <p>The active rear wing, rear diffuser, flat underbody, front triplane wing and S-Duct work in concert to generate 1,000 kg of downforce at 250 km/h — a result enhanced by the active suspension, which contributes directly to generating ground effect. Select a red dot on the car to explore how the air is tamed.</p>
+    </div>
+  </div>
+  <div class="vsection" id="vaero">
+    <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670d2e124cfd1f0079c40db0-ferrari-f80-aerodynamics-s-duct-desk.webp">
+      <source src="assets/video/aero-sduct.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker mono">MASTER OF THE AIR</p>
+      <h3 class="vsection__title">Master of the air</h3>
+      <p class="vsection__text">Every intake has a reason — no opening is decorative.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="aero-stage" id="aeroStage">
+      <div class="aero__viewer">
+        <div class="aero__media is-active" data-aero="main">
+          <img src="assets/img/670d2d6fcd61b70010d5e544-ferrari-f80-aerodynamics-intro-hotspot-desk.webp" alt="F80 aerodynamics" width="1600" height="900">
+        </div>
+        <div class="aero__media" data-aero="wing">
+          <img src="assets/img/670d2ead4cfd1f0079c40db2-ferrari-f80-aerodynamics-rear-wing-desk.webp" alt="Active rear wing" width="1600" height="900" loading="lazy">
+        </div>
+        <div class="aero__media" data-aero="cooling">
+          <img src="assets/img/670d30764cfd1f0079c40db3-ferrari-f80-aerodynamics-cooling-desk.webp" alt="Cooling system" width="1600" height="900" loading="lazy">
+        </div>
+        <div class="aero__media" data-aero="floor">
+          <img src="assets/img/670d31313112f10079d5fc94-ferrari-f80-aerodynamics-ground-effect-desk.webp" alt="Ground effect" width="1600" height="900" loading="lazy">
+        </div>
+        <button class="aero__hotspot" data-aero="wing" aria-label="Active rear wing"><span class="aero__dot"></span><i>ACTIVE REAR WING</i></button>
+        <button class="aero__hotspot" data-aero="cooling" aria-label="Cooling system"><span class="aero__dot"></span><i>COOLING</i></button>
+        <button class="aero__hotspot" data-aero="floor" aria-label="Ground effect"><span class="aero__dot"></span><i>GROUND EFFECT</i></button>
+      </div>
+      <div class="aero__panel" id="aeroPanel">
+        <div class="aero__panel-item is-active" data-aero="main">
+          <h3>Every line born of air</h3>
+          <p>The thermal layout is designed in synergy with the aerodynamics to preserve maximum functionality in terms of vertical load generation. The active elements — front triplane wing and rear wing — change the car's configuration with the dynamic driving condition.</p>
+        </div>
+        <div class="aero__panel-item" data-aero="wing">
+          <h3>Active rear wing</h3>
+          <p>The main piece of the adaptive aerodynamics system. The control systems measure and process acceleration, speed and steering angle in real time, continuously adjusting the wing between the High Downforce (HD) position — used in braking and cornering — and the Low Drag (LD) position, which reduces drag to favour straight-line speed.</p>
+        </div>
+        <div class="aero__panel-item" data-aero="cooling">
+          <h3>Highly advanced cooling system</h3>
+          <p>The radiant masses are positioned to maximise the flow of free-stream air and the vertical load generated by the car. Cooling and aerodynamics, designed as one.</p>
+        </div>
+        <div class="aero__panel-item" data-aero="floor">
+          <h3>Exalting ground effect</h3>
+          <p>The development of a three-dimensional aerodynamic floor imposed radical choices: a racing driving position at the front, and a chassis solution with a very low front section. The active suspension contributes directly to generating ground effect — the F80 holds its perfect dialogue with the road, at any instant.</p>
+        </div>
+      </div>
+    </div>
+    <div class="aero__list">
+      <article class="reveal">
+        <span class="mono aero__no">01</span>
+        <h3>Wing stowed at top speed</h3>
+        <p>Infinitely adjustable between HD and LD: high downforce for braking and cornering, low drag for the straights — composure beyond 350 km/h.</p>
+      </article>
+      <article class="reveal">
+        <span class="mono aero__no">02</span>
+        <h3>Cooling and downforce, together</h3>
+        <p>Radiant masses positioned to maximise free-stream flow and vertical load — every degree calculated.</p>
+      </article>
+      <article class="reveal">
+        <span class="mono aero__no">03</span>
+        <h3>Three-dimensional floor</h3>
+        <p>A racing driving position enables an extremely low front section; the active suspension directly generates ground effect — the perfect dialogue with the road, at any instant.</p>
+      </article>
+      <article class="reveal">
+        <span class="mono aero__no">04</span>
+        <h3>The S-Duct front</h3>
+        <p>A fixed element connecting the two front wings, with two flaps completing the system — functional design language at its finest.</p>
+      </article>
+    </div>
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b class="mono">1,000</b><span class="mono">kg @ 250 km/h</span></div>
+      <div class="bigstats__item"><b class="mono">1,050</b><span class="mono">kg peak downforce</span></div>
+      <div class="bigstats__item"><b class="mono">HD/LD</b><span class="mono">Infinitely adjustable wing</span></div>
+      <div class="bigstats__item"><b class="mono">3</b><span class="mono">Active aero elements</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 ARCHITECTURE ============ -->
+<div class="chapter-break" data-ch="06"><span class="chapter-break__watermark" aria-hidden="true">ARCHITECTURE</span><div class="wrap"><span class="cb__no mono">06</span><h2 class="cb__name">Architecture<span class="cb__en">ARCHITECTURE</span></h2><span class="cb__meta mono">CHAPTER 06 / 08</span>
+      <p class="cb__lead">A ground-up chassis, and a digital-twin brain.</p></div></div>
+<section class="architecture section" id="architecture" data-num="06">
+  <div class="wrap">
+    <h2 class="sec-title reveal">Designed from the ground up, for performance</h2>
+    <div class="story__lead reveal">
+      <p>The chassis of the F80 has been designed completely from the ground up. A multi-material approach: carbon-fibre and composite cell and roof, aluminium front and rear subframes, fastened to the tub with titanium screws. Compared with the LaFerrari: 5% weight saving, +50% torsional and beam stiffness.</p>
+      <p>The tub features hollow carbon-fibre sills as the main load-bearing elements, cured with dual tubular bladders — an innovative production method derived from Formula 1. As on the LaFerrari, the sills act as side impact absorbers.</p>
+    </div>
+  </div>
+  <div class="vsection" id="vchassis">
+    <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670e292f21404600566636dc-ferrari-250-tech-spech-focus-chassis-desk.webp">
+      <source src="assets/video/chassis.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker mono">CHASSIS</p>
+      <h3 class="vsection__title">A skeleton of carbon fibre</h3>
+      <p class="vsection__text">Hollow carbon-fibre sills carry the side loads — and act as side impact absorbers.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="media-row zoom reveal">
+      <figure class="media-row__img">
+        <video src="assets/video/suspension.mp4" autoplay muted loop playsinline preload="metadata" poster="assets/img/670e136e4cfd1f0079c40dd2-ferrari-f80-scroll_zenitale_sospensioni.webp"></video>
+        <figcaption class="mono">Active suspension</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>Active suspension</h3>
+        <p>Completely independent suspension actuated by four 48V electric motors, double wishbone layout, active inboard dampers, 3D-printed suspension arms. It fulfils two apparently irreconcilable requirements — a very flat ride on the track, and a comfortable, usable ride on the road.</p>
+        <ul>
+          <li><span>Actuation</span><b>Four 48V motors · fully independent</b></li>
+          <li><span>Arms</span><b>Manufactured with 3D printing</b></li>
+          <li><span>Ground effect</span><b>Directly contributes to downforce</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="media-row media-row--rev zoom reveal">
+      <figure class="media-row__img">
+        <img src="assets/img/670e5ac31eb0fa005567191e-ferrari-f80-interior-social-card.webp" alt="SSC 9.0" loading="lazy">
+        <figcaption class="mono">SSC 9.0 · Side Slip Control</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>SSC 9.0 · digital twin</h3>
+        <p>The new SSC 9.0 (Side Slip Control) benefits from the integrated FIVE (Ferrari Integrated Vehicle Estimator), based on the concept of the digital twin — estimating yaw angle and the velocity of the centre of mass in real time, each with a precision of under 1° and 1 km/h respectively.</p>
+        <ul>
+          <li><span>Precision</span><b>Yaw &lt;1° · velocity &lt;1 km/h</b></li>
+          <li><span>Benefits</span><b>All dynamic control systems, including traction control</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b class="mono">−5%</b><span class="mono">Weight · vs LaFerrari</span></div>
+      <div class="bigstats__item"><b class="mono">+50%</b><span class="mono">Torsional and beam stiffness</span></div>
+      <div class="bigstats__item"><b class="mono">&lt;1°</b><span class="mono">Yaw estimation precision</span></div>
+      <div class="bigstats__item"><b class="mono">4×48V</b><span class="mono">Active suspension motors</span></div>
+    </div>
+
+    <!-- Brakes -->
+    <div class="vsection" id="vbrakes">
+      <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670f682d57a595000f7361a6-ferrari-f80-dynamics-cover-new-desk.webp">
+        <source src="assets/video/brakes-brm.mp4" type="video/mp4">
+      </video>
+      <div class="vsection__veil"></div>
+      <div class="vsection__content">
+        <p class="vsection__kicker mono">CCM-R PLUS · CO-DEVELOPED WITH BREMBO</p>
+        <h3 class="vsection__title">The limit of braking, redefined</h3>
+        <p class="vsection__text">Longer carbon fibres · +100% strength · +300% thermal conductivity · 28 metres from 100 km/h.</p>
+      </div>
+    </div>
+    <div class="media-row zoom reveal">
+      <figure class="media-row__img">
+        <img src="assets/img/670e5aef2140460056663715-ferrari-f80-suspensions-social-card.webp" alt="CCM-R Plus braking" loading="lazy">
+        <figcaption class="mono">CCM-R Plus · carbon ceramic</figcaption>
+      </figure>
+      <div class="media-row__text">
+        <h3>CCM-R Plus</h3>
+        <p>An all-time first for a road-going application: longer carbon fibres significantly improve mechanical strength (+100%) and thermal conductivity (+300%). A silicon carbide coating offers incredible wear resistance. F1-derived ventilation channels, optimised with CFD.</p>
+        <ul>
+          <li><span>Front discs</span><b>408 × 220 × 38 mm · 6 pistons</b></li>
+          <li><span>Rear discs</span><b>390 × 263 × 32 mm · 4 pistons</b></li>
+          <li><span>Tyres</span><b>Michelin Cup2 / Cup2R</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Drive modes -->
+    <h3 class="modes__title mono">eManettino · Three characters</h3>
+    <div class="modes">
+      <article class="modecard reveal">
+        <h4 class="mono">HYBRID</h4>
+        <p class="modecard__sub">Stability first</p>
+        <p>The default mode. Prioritises energy recovery and charge maintenance, keeping the MGU-K ready to deliver boost — for road and long distance alike.</p>
+      </article>
+      <article class="modecard reveal">
+        <h4 class="mono">PERFORMANCE</h4>
+        <p class="modecard__sub">Consistency is everything</p>
+        <p>For extended stints on the track, optimising energy flows to hold battery state of charge around 70% — uninterrupted performance.</p>
+      </article>
+      <article class="modecard reveal">
+        <h4 class="mono">QUALIFY</h4>
+        <p class="modecard__sub">Everything, unleashed</p>
+        <p>All 1,200 hp. Electronic torque shaping during upshifts combines the torque curves of motor and ICE in the best configuration for maximum performance.</p>
+      </article>
+    </div>
+    <p class="story__note reveal">'Performance' and 'Qualify' also offer a first for Ferrari and the automotive industry as a whole — <b>Boost Optimization</b>: the system records the track, identifies curves and straights, and delivers extra power exactly where it is needed.</p>
+    <p class="story__note reveal">Unlike anything else in the current supercar world, the F80 combines extreme performance with uncompromising usability on the road. The main ADAS functions come as standard: Adaptive Cruise Control with Stop&amp;Go, Automatic Emergency Brake, Lane Departure Warning, Lane Keeping Assist, Auto High Beam, Traffic Sign Recognition and Drowsiness Warning.</p>
+  </div>
+</section>
+
+<!-- ============ 07 TECH SPECS ============ -->
+<div class="chapter-break" data-ch="07"><span class="chapter-break__watermark" aria-hidden="true">SPECIFICATIONS</span><div class="wrap"><span class="cb__no mono">07</span><h2 class="cb__name">Specifications<span class="cb__en">SPECIFICATIONS</span></h2><span class="cb__meta mono">CHAPTER 07 / 08</span>
+      <p class="cb__lead">All the numbers, at once.</p></div></div>
+<section class="techspec section" id="specs" data-num="07">
+  <div class="vsection" id="vspecs">
+    <video class="vsection__video" autoplay muted loop playsinline preload="auto" poster="assets/img/670d3d32e4530000793bb76a-ferrari-f80-tech-specs-desktop.webp">
+      <source src="assets/video/techspec-intro.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker mono">TECHNICAL SPECIFICATIONS</p>
+      <h3 class="vsection__title">Numbers. They never lie.</h3>
+      <p class="vsection__text">All figures below are from the official Ferrari technical data sheet.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="accel reveal">
+      <div class="accel__item"><b class="mono">2.15 s</b><span class="mono">0–100 km/h</span></div>
+      <div class="accel__item"><b class="mono">5.75 s</b><span class="mono">0–200 km/h</span></div>
+      <div class="accel__item"><b class="mono">28 m</b><span class="mono">100–0 km/h braking</span></div>
+      <div class="accel__item"><b class="mono">98 m</b><span class="mono">200–0 km/h braking</span></div>
+    </div>
+    <p class="perf__note mono">* Maximum speed 350 km/h · Dry weight 1,525 kg · 1.27 kg/hp</p>
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="1200" data-max="1500" data-unit="hp" data-label="Combined power">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">hp</span></figcaption>
+        </div>
+        <p class="gauge__label">Combined power<br><small>V6 900 hp + hybrid 300 hp</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="350" data-max="400" data-unit="km/h" data-label="Maximum speed">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">km/h</span></figcaption>
+        </div>
+        <p class="gauge__label">Maximum speed<br><small>The Maranello benchmark</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1000" data-max="1200" data-unit="kg" data-label="Downforce @ 250 km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b> <span class="gauge__unit mono">kg</span></figcaption>
+        </div>
+        <p class="gauge__label">Downforce @ 250 km/h<br><small>The extreme of active aero</small></p>
+      </figure>
+    </div>
+    <div class="spec-table reveal">
+      <div class="spec-table__row"><span class="mono">Combined power</span><b>1,200 hp (V6 900 hp + hybrid 300 hp)</b></div>
+      <div class="spec-table__row"><span class="mono">Engine</span><b>F163CF · 3.0 L V6 120° naturally aspirated · 900 hp @ 8750 rpm · 850 Nm @ 5500 rpm · 9,000 rpm (9,200 dynamic limiter) · 9.5:1 · 300 hp/l</b></div>
+      <div class="spec-table__row"><span class="mono">Hybrid system</span><b>Front axle twin motors (105 kW each) + rear MGU-K (70 kW regen / 60 kW assist) · 860 V · battery 2.28 kWh / 242 kW / 6.16 kW/kg</b></div>
+      <div class="spec-table__row"><span class="mono">Performance</span><b>0–100 km/h 2.15 s · 0–200 km/h 5.75 s · 100–0 km/h 28 m · 200–0 km/h 98 m</b></div>
+      <div class="spec-table__row"><span class="mono">Top speed</span><b>350 km/h</b></div>
+      <div class="spec-table__row"><span class="mono">Downforce</span><b>1,000 kg @ 250 km/h (1,050 kg peak)</b></div>
+      <div class="spec-table__row"><span class="mono">Weight</span><b>Dry 1,525 kg (with optional content) · 1.27 kg/hp · 42.2% / 57.8%</b></div>
+      <div class="spec-table__row"><span class="mono">Dimensions</span><b>Length 4,840 mm · Width 2,060 mm · Height 1,138 mm · Wheelbase 2,665 mm · Tracks 1,701 / 1,660 mm · Tank 63.5 L</b></div>
+      <div class="spec-table__row"><span class="mono">Gearbox</span><b>F1 DCT, 8-speed dual-clutch</b></div>
+      <div class="spec-table__row"><span class="mono">Electronics</span><b>SSC 9.0 (TC · eDiff · SCM · Php 3.0 · FDE 2.0 · EPS · ABS-Evo · 6D sensor)</b></div>
+      <div class="spec-table__row"><span class="mono">Bodyshell</span><b>Carbon-fibre tub + aluminium subframes (titanium screws) · dual bladder moulding · butterfly doors</b></div>
+      <div class="spec-table__row"><span class="mono">Suspension</span><b>Active · 4×48V motors · double wishbone · active inboard dampers · 3D-printed arms</b></div>
+      <div class="spec-table__row"><span class="mono">Brakes</span><b>CCM-R Plus carbon ceramic (Brembo) · front 408×220×38 mm 6-piston · rear 390×263×32 mm 4-piston</b></div>
+      <div class="spec-table__row"><span class="mono">Tyres</span><b>Michelin Pilot Sport Cup2 / Cup2R · 285/30 R20 front · 345/30 R21 rear</b></div>
+      <div class="spec-table__row"><span class="mono">Drive modes</span><b>eManettino: Hybrid · Performance · Qualify (with Boost Optimization)</b></div>
+      <div class="spec-table__row"><span class="mono">Limited series</span><b>799 examples</b></div>
+      <div class="spec-table__row"><span class="mono">Consumption / emissions</span><b>Combined 13.5 l/100km · CO₂ 307 g/km (WLTP, EC 715/2007)</b></div>
+    </div>
+    <p class="specs__note mono">* Source: ferrari.com model page and official press release (2024-10-17).</p>
+  </div>
+</section>
+
+<!-- ============ 08 EPILOGUE ============ -->
+<section class="conclusion section" id="conclusion" data-num="08">
+  <div class="wrap">
+    <div class="conclusion__inner">
+      <p class="conclusion__en mono">MARANELLO · PRANCING HORSE</p>
+      <h2 class="conclusion__title">The prologue to the next era</h2>
+      <div class="final-stats reveal">
+        <div class="final-stats__item"><b class="mono">1,200</b><span class="mono">hp</span></div>
+        <div class="final-stats__item"><b class="mono">799</b><span class="mono">examples</span></div>
+        <div class="final-stats__item"><b class="mono">2025</b><span class="mono">deliveries begin</span></div>
+      </div>
+      <p class="conclusion__lead reveal">A 1,200 hp machine, an architecture built for the extreme, the latest member of a legendary lineage. 799 examples, each carrying the obsession of Maranello — and the first <b>7-year maintenance programme</b> ever offered on a supercar: all regular maintenance for the first seven years of the car's life, original spares, and checks by staff trained at the Ferrari Training Centre in Maranello. The GTO began the legend, the F40 defined the faith, the LaFerrari proved the hybrid. The F80 — it is the prologue to the next era.</p>
+      <div class="conclusion__links reveal">
+        <a class="conclusion__btn mono" href="https://www.ferrari.com/en-EN/auto/f80" target="_blank" rel="noopener">Visit the official site</a>
+        <a class="conclusion__btn conclusion__btn--ghost mono" href="https://www.ferrari.com/en-EN/media-centre/articles/f80-ferraris-new-supercar" target="_blank" rel="noopener">Read the press release</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <p class="footer__brand mono">FERRARI <span>F80</span></p>
+      <p class="footer__links mono">
+        <a href="index.html">中文</a>
+      </p>
+    </div>
+    <div class="footer__disclaimer">
+      <p>This is a fan-made showcase page. All content, images and videos are from the official Ferrari model page and press releases, for learning and display purposes. Ferrari, F80 and related trademarks, images © Ferrari S.p.A. Performance figures per official releases.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" data-lb-close aria-label="Close">×</button>
+  <button class="lightbox__prev" data-lb-prev aria-label="Previous">‹</button>
+  <figure class="lightbox__stage">
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lightbox__next" data-lb-next aria-label="Next">›</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
