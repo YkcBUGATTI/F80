@@ -1816,3 +1816,43 @@ main section:not(.hero) {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(-4px); }
 }
+
+/* ============ 左右方向入场动画 ============ */
+/* 仅淡入(用于图文区父容器,子元素做左右动画) */
+.reveal--fade { transform: none; }
+.reveal--left { transform: translateX(-46px); }
+.reveal--right { transform: translateX(46px); }
+.reveal--left.is-in, .reveal--right.is-in { transform: none; }
+
+/* 图文交错:图与文分别从两侧进入(rev 版反向) */
+.media-row .media-row__img { transform: translateX(-46px); }
+.media-row .media-row__text { transform: translateX(46px); }
+.media-row--rev .media-row__img { transform: translateX(46px); }
+.media-row--rev .media-row__text { transform: translateX(-46px); }
+.media-row .media-row__img.is-in, .media-row .media-row__text.is-in { transform: none; }
+
+/* 卡片组交替进入 */
+.design__grid .dcard:nth-child(odd),
+.heritage__row .hcard:nth-child(odd),
+.aero__list article:nth-child(odd) { transform: translateX(-46px); }
+.design__grid .dcard:nth-child(even),
+.heritage__row .hcard:nth-child(even),
+.aero__list article:nth-child(even) { transform: translateX(46px); }
+.design__grid .dcard.is-in,
+.heritage__row .hcard.is-in,
+.aero__list article.is-in { transform: none; }
+
+.pt__three .ptcard:first-child,
+.modes .modecard:first-child { transform: translateX(-46px); }
+.pt__three .ptcard:last-child,
+.modes .modecard:last-child { transform: translateX(46px); }
+.pt__three .ptcard.is-in,
+.modes .modecard.is-in { transform: none; }
+
+.webcard--inline:nth-child(odd) { transform: translateX(-46px); }
+.webcard--inline:nth-child(even) { transform: translateX(46px); }
+.webcard--inline.is-in { transform: none; }
+
+/* 引言:自左侧进入 */
+.quote { transform: translateX(-46px); }
+.quote.is-in { transform: none; }
