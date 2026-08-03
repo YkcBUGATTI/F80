@@ -449,8 +449,8 @@ button { font-family: inherit; color: inherit; background: none; border: none; c
   position: relative;
   padding: 72px 0 64px;
   background:
-    radial-gradient(48% 150% at 10% 50%, rgba(220, 0, 0, 0.18) 0%, transparent 58%),
-    radial-gradient(55% 130% at 90% 50%, rgba(220, 0, 0, 0.1) 0%, transparent 62%),
+    radial-gradient(42% 160% at 8% 50%, rgba(220, 0, 0, 0.24) 0%, transparent 60%),
+    radial-gradient(50% 140% at 92% 50%, rgba(220, 0, 0, 0.16) 0%, transparent 64%),
     linear-gradient(180deg, #0d0e15 0%, #07080b 100%),
     repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.012) 0 2px, transparent 2px 16px);
   border-top: 1px solid rgba(220, 0, 0, 0.16);
@@ -511,7 +511,7 @@ button { font-family: inherit; color: inherit; background: none; border: none; c
   pointer-events: none;
   user-select: none;
 }
-.chapter-break .wrap { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 12px 40px; align-items: end; padding-left: 22px; border-left: 3px solid var(--red); box-shadow: inset 22px 0 40px -28px rgba(220, 0, 0, 0.35); }
+.chapter-break .wrap { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 12px 40px; align-items: end; padding-left: 26px; border-left: 3px solid var(--red); box-shadow: inset 34px 0 46px -30px rgba(220, 0, 0, 0.45); }
 .cb__no {
   font-size: clamp(46px, 6vw, 72px);
   color: var(--red);
@@ -521,7 +521,6 @@ button { font-family: inherit; color: inherit; background: none; border: none; c
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.7s var(--ease2), transform 0.7s var(--ease2);
-  text-shadow: 0 0 34px rgba(220, 0, 0, 0.7), 0 0 80px rgba(220, 0, 0, 0.4);
 }
 .chapter-break.is-in .cb__no {  }
 
@@ -536,9 +535,8 @@ button { font-family: inherit; color: inherit; background: none; border: none; c
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.7s var(--ease2) 0.08s, transform 0.7s var(--ease2) 0.08s;
-  filter: drop-shadow(0 0 18px rgba(220, 0, 0, 0.35));
 }
-.chapter-break:hover .cb__name { filter: drop-shadow(0 0 26px rgba(220, 0, 0, 0.55)); }
+
 
 .cb__en {
   display: block;
