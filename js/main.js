@@ -5,6 +5,8 @@
 (function () {
   'use strict';
 
+  document.documentElement.classList.add('js');
+
   var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var finePointer = window.matchMedia('(pointer: fine)').matches;
 
@@ -228,6 +230,21 @@
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(function (el) { revealIO.observe(el); });
 
+  /* ---------- 成组卡片入场递增延迟(stagger,克制 0.08s 步进) ---------- */
+  if (!prefersReduced) {
+    var staggerGroups = [
+      '.heritage__row', '.design__grid', '.pt__three', '.modes',
+      '.webcards', '.aero__list', '.bigstats', '.accel', '.final-stats'
+    ];
+    staggerGroups.forEach(function (sel) {
+      var group = document.querySelector(sel);
+      if (!group) return;
+      Array.prototype.forEach.call(group.children, function (child, i) {
+        child.style.setProperty('--d', (i * 0.08).toFixed(2) + 's');
+      });
+    });
+  }
+
   /* ---------- 章节分隔页入场 ---------- */
   var cbIO = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
@@ -413,7 +430,7 @@
     });
   }
 
-  /* ---------- 导航跳转(瞬时定位,无平滑动画干扰) ---------- */
+  /* ---------- 导航跳转(平滑滚动;菜单打开时先关闭并解锁滚动) ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       var id = a.getAttribute('href').slice(1);
@@ -421,7 +438,17 @@
       if (!target) return;
       e.preventDefault();
       var top = target.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop);
-      window.scrollTo(0, top);
+      var fromMenu = menuOverlay && menuOverlay.classList.contains('is-open');
+      if (fromMenu) {
+        menuOverlay.classList.remove('is-open');
+        setTimeout(function () { menuOverlay.hidden = true; }, 400);
+        if (menuBtn) { menuBtn.setAttribute('aria-expanded', 'false'); menuBtn.classList.remove('is-open'); }
+      }
+      document.body.style.overflow = '';
+      var go = function () {
+        window.scrollTo({ top: top, behavior: prefersReduced ? 'auto' : 'smooth' });
+      };
+      if (fromMenu) { setTimeout(go, 360); } else { go(); }
     });
   });
 
@@ -621,6 +648,16 @@
     if (lightbox && lightbox.classList.contains('is-open')) {
       if (e.key === 'ArrowLeft') document.querySelector('[data-lb-prev]').click();
       if (e.key === 'ArrowRight') document.querySelector('[data-lb-next]').click();
+    }
+  });
+
+  /* ---------- 图片懒加载兜底(不修改 HTML 源码,运行时补齐) ---------- */
+  document.querySelectorAll('img').forEach(function (img) {
+    if (!img.closest('.hero') && !img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+    }
+    if (!img.hasAttribute('decoding')) {
+      img.setAttribute('decoding', 'async');
     }
   });
 })();

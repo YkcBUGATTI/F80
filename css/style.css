@@ -1985,3 +1985,203 @@ html,body{overflow-x:hidden;max-width:100%}
   .footer__contact-btns{flex-direction:column;width:100%;margin-left:0}
   .footer__contact-btns .sbtn{width:100%;min-width:0}
 }
+
+/* ============================================================
+   F80 品牌视觉增强层 v6
+   跃马红 × 碳纤维黑 · 赛车感排版 · 玻璃拟态点缀
+   纯本地资源,不引入任何外部 CDN/字体/图标
+   ============================================================ */
+
+/* ---------- 1. 品牌设计令牌 ---------- */
+:root {
+  --rosso: #dc0000;
+  --rosso-hot: #ff2a1f;
+  --rosso-deep: #7a0000;
+  --rosso-glow: rgba(220, 0, 0, 0.55);
+  --carbon-0: #050507;
+  --carbon-1: #0b0c10;
+  --carbon-2: #14161b;
+  --ink: #f5f5f7;
+  --muted: #a8a9b2;
+  --hairline: rgba(255, 255, 255, 0.12);
+  --shadow-card: 0 18px 50px rgba(0, 0, 0, 0.42);
+  --shadow-red: 0 0 34px rgba(220, 0, 0, 0.16);
+  --glass-bg: rgba(8, 9, 12, 0.55);
+  --glass-line: rgba(255, 255, 255, 0.16);
+  /* 旧令牌重映射到品牌色系,既有规则无需改动 */
+  --bg: var(--carbon-0);
+  --bg2: var(--carbon-1);
+  --panel: var(--carbon-2);
+  --red: var(--rosso);
+  --txt: var(--ink);
+  --dim: var(--muted);
+}
+
+/* ---------- 2. 页面质感:碳纤维斜纹 + 暗红氛围光 ---------- */
+body {
+  background:
+    radial-gradient(1100px 560px at 88% -10%, rgba(220, 0, 0, 0.07), transparent 62%),
+    radial-gradient(900px 520px at -12% 32%, rgba(220, 0, 0, 0.05), transparent 58%),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.014) 0 1px, transparent 1px 7px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.014) 0 1px, transparent 1px 7px),
+    var(--carbon-0);
+  /* 注意:不用 background-attachment: fixed —— 固定背景在滚动时整屏重绘,是卡顿主因 */
+}
+
+/* ---------- 3. 排版层级:统一字距/行高/强调色 ---------- */
+.sec-title { letter-spacing: 0.03em; }
+.sec-title b, .sec-title strong { color: var(--rosso); font-weight: 500; }
+.sec-title::after { box-shadow: 0 0 18px rgba(220, 0, 0, 0.7); }
+.cb__name { letter-spacing: 0.05em; }
+.mono { letter-spacing: 0.06em; }
+
+/* ---------- 4. HERO:速度与力量感 ---------- */
+/* 斜向赛道扫光(缓慢流动)
+   用 transform: translateX 合成器动画代替 background-position,
+   避免每帧重绘大区域导致卡顿 */
+.hero__media::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, transparent 25%, rgba(220, 0, 0, 0.16) 43%, rgba(255, 255, 255, 0.09) 52%, transparent 75%);
+  background-size: 55% 100%;
+  background-repeat: no-repeat;
+  transform: translateX(-140%);
+  will-change: transform;
+  animation: heroSweep 9s var(--ease) infinite;
+}
+@keyframes heroSweep {
+  0% { transform: translateX(-140%); }
+  55%, 100% { transform: translateX(240%); }
+}
+/* 速度线(低透明细腻网格) */
+.hero__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: repeating-linear-gradient(90deg, transparent 0 88px, rgba(255, 255, 255, 0.03) 88px 89px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 18%, #000 100%);
+  mask-image: linear-gradient(to bottom, transparent 18%, #000 100%);
+  opacity: 0.6;
+}
+/* 遮罩置顶,保证文字可读 */
+.hero__veil {
+  z-index: 2;
+  background:
+    radial-gradient(120% 90% at 50% 112%, rgba(5, 5, 7, 0.94) 0%, rgba(5, 5, 7, 0.55) 45%, rgba(5, 5, 7, 0.16) 75%, rgba(5, 5, 7, 0.38) 100%),
+    linear-gradient(to top, var(--bg) 0%, rgba(5, 5, 7, 0.3) 20%, transparent 44%),
+    radial-gradient(90% 55% at 50% 0%, rgba(220, 0, 0, 0.09) 0%, transparent 70%);
+}
+/* 标题红色辉光 + 凌厉字距 */
+.hero__title {
+  letter-spacing: 0.045em;
+  text-shadow: 0 3px 34px rgba(0, 0, 0, 0.65), 0 0 90px rgba(220, 0, 0, 0.32), 0 0 30px rgba(220, 0, 0, 0.18);
+}
+.hero__kicker { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.7), 0 0 24px rgba(220, 0, 0, 0.45); }
+/* 数据面板:克制玻璃拟态 + 红色点缀线 */
+.hero__specs {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(26px, 4vw, 44px);
+  padding: 16px 26px;
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-line);
+  border-left: 2px solid var(--rosso);
+  border-radius: 4px;
+  box-shadow: var(--shadow-card), var(--shadow-red);
+  position: relative;
+}
+.hero__specs span { letter-spacing: 0.12em; }
+/* 滚动提示红线强化 */
+.hero__line { box-shadow: 0 0 12px rgba(220, 0, 0, 0.45); }
+
+/* ---------- 5. 卡片/按钮/数据区:统一浮起 + 红色描边 ---------- */
+.hcard, .dcard, .ptcard, .modecard, .webcard, .bigstats__item {
+  transition: transform 0.4s var(--ease), border-color 0.4s, box-shadow 0.4s;
+}
+.hcard:hover, .dcard:hover, .ptcard:hover, .modecard:hover, .webcard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(220, 0, 0, 0.5);
+  box-shadow: inset 3px 0 0 0 rgba(220, 0, 0, 0.55), 0 20px 44px rgba(0, 0, 0, 0.45), 0 0 28px rgba(220, 0, 0, 0.1);
+}
+.hcard:active, .dcard:active, .ptcard:active, .modecard:active, .webcard:active {
+  transform: translateY(-2px) scale(0.99);
+}
+.bigstats__item:hover {
+  transform: translateY(-4px);
+  box-shadow: inset 3px 0 0 0 rgba(220, 0, 0, 0.5), 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 24px rgba(220, 0, 0, 0.08);
+}
+/* 数据行/列表项 hover 红色左线 */
+.accel__item { border-left-color: rgba(255, 255, 255, 0.13); transition: border-color 0.3s, transform 0.35s var(--ease); }
+.accel__item:hover { border-left-color: var(--rosso); }
+.spec-table__row { transition: background 0.3s; }
+/* 规格表当前行左侧红点 */
+.spec-table__row b { transition: color 0.3s; }
+.spec-table__row:hover b { color: #fff; }
+/* 引言强化 */
+.quote { border-color: rgba(255, 255, 255, 0.16); }
+.quote:hover { border-color: var(--rosso); box-shadow: -18px 0 34px -22px rgba(220, 0, 0, 0.45), 0 0 30px rgba(220, 0, 0, 0.07); }
+/* 主按钮红色辉光反馈 */
+.conclusion__btn { box-shadow: 0 12px 34px -12px rgba(220, 0, 0, 0.4); }
+.conclusion__btn:hover { box-shadow: 0 16px 44px -10px rgba(220, 0, 0, 0.55); }
+.conclusion__btn:active { transform: translateY(0) scale(0.98); }
+.conclusion__btn--ghost { box-shadow: none; }
+/* footer portal 卡片微光 */
+.footer__portal { box-shadow: var(--shadow-card); }
+.footer__portal:hover { border-color: rgba(220, 0, 0, 0.4); box-shadow: 0 24px 56px rgba(0, 0, 0, 0.5), 0 0 34px rgba(220, 0, 0, 0.1); }
+/* 键盘可达性:清晰红色焦点环 */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--rosso);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+/* 链接 hover 统一 */
+.lang-btn:hover, .footer__links a:hover, .index-rail__nav a:hover { color: var(--rosso); }
+.footer__links a { transition: color 0.3s; }
+.lang-btn { transition: color 0.3s, border-color 0.3s; }
+
+/* ---------- 6. 响应式补充 ---------- */
+@media (max-width: 1080px) {
+  .hero__specs { padding: 14px 20px; gap: clamp(20px, 3vw, 34px); }
+}
+@media (max-width: 860px) {
+  .hero__specs { flex-wrap: wrap; row-gap: 12px; }
+  .nav__now {
+    display: inline-block;
+    max-width: 38vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+  }
+  .menu-overlay__nav { gap: 14px; }
+}
+@media (max-width: 640px) {
+  .hero__content { padding-bottom: 64px; }
+  .hero__specs { padding: 12px 16px; gap: 14px 22px; }
+  .hero__specs b { font-size: 24px; }
+  .hero__scroll { right: 18px; bottom: 22px; }
+  .section { padding: 72px 0; }
+  .wrap { width: min(1280px, calc(100% - 36px)); }
+  .media-row__img img { height: auto; }
+  .final-stats__item b { font-size: 34px; }
+  .footer__top { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .footer__links { flex-wrap: wrap; gap: 14px; }
+  .webcards { gap: 14px; }
+}
+
+/* ---------- 7. reduced-motion 降级补充 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .hero__media::before { animation: none; opacity: 0; }
+  .hero__media::after { opacity: 0; }
+  .hero__specs { backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .reveal, .reveal--left, .reveal--right { transition-delay: 0s !important; }
+  html { scroll-behavior: auto !important; }
+}
