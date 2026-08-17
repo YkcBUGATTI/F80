@@ -1,5 +1,5 @@
 /* FERRARI F80 展示站 Service Worker:静态资源缓存 */
-const CACHE = 'f80-v6';
+const CACHE = 'f80-v7';
 const PRECACHE = [
   './',
   './index.html',
