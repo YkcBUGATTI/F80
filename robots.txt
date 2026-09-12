@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://f80.hypercar.site/sitemap.xml
